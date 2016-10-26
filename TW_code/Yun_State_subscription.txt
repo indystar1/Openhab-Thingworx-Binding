@@ -1,0 +1,7 @@
+This sample script is used in Subscriptions to monitor the change of the YunAlive remote property, and change Yun_State_Image's imagelink dynamically, which will be updated on my mashup.
+
+if(eventData.newValue.value==true) {
+    me.Yun_State_Image = "/Thingworx/MediaEntities/SubsystemRunning";
+} else if (eventData.newValue.value==false) {
+    me.Yun_State_Image = "/Thingworx/MediaEntities/DeleteIcon";
+}
