@@ -1,0 +1,12 @@
+This code is 
+It assumes that you propery created an email notifier and configured email access information.
+
+var params = {
+to: "recipient@email.com" /* STRING */,
+body: "Front Motion detected" /* HTML */,
+subject: eventData.description /* STRING */,
+from:"sender@email.com" /* STRING */,
+};
+
+// no return
+Things["JLeeOHNotifier"].SendMessage(params);
