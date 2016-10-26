@@ -1,0 +1,9 @@
+// A few example items
+
+Number FrontMotion "Front Motion? [MAP(motion.map):%d]" <man> (Sensors) {mqtt="<[mybroker:JLhome/FrontMotion:state:default]"}
+// To detect if my Arduino Yun is offline
+Number YunWatchdog (Sensors) {mqtt="<[mybroker:JLhome/YunAlive:state:default]"}
+Number YunAlive "Is My Yun Alive? [MAP(onoffline.map):%d]" <network> (Sensors)
+// For Camera 2 control
+Number Cam2Status "Cam2 Status [MAP(onoffline.map):%d]" <ipcam2> (Sensors) {mqtt="<[mybroker:JLhome/Cam2Live:state:default]"}
+Switch Cam2OnOff "Cam2 On/Off Control" <onoffsw1> (Settings) {mqtt=">[mybroker:JLhome/Cam2OnOff:command:ON:Cam2ON], >[mybroker:JLhome/Cam2OnOff:command:OFF:Cam2OFF]"}
