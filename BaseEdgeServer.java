@@ -39,8 +39,8 @@ public class BaseEdgeServer {
     private static final int POLLING_INTERVAL_SECONDS = 600;
     // protected static SignalHandler oldSigTERM;
     protected static ConnectedThingClient client;
-    protected static String address = "wss://iupui.cloud.thingworx.com:443/Thingworx/WS";
-    protected static String appKey = "22889823-850b-4bc2-b901-bd12c122970a";
+    protected static String address = "wss://your.thingworx.server.com:443/Thingworx/WS";
+    protected static String appKey = "your_appkey";
     protected static String simulated = "simulated";
     public static final String THING_NAME = "JLeeOHThings";
     public static final String THING_DESCRIPTION = "OpenHAB Events";
@@ -60,7 +60,6 @@ public class BaseEdgeServer {
             System.err.println("Connecting to " + address + " using key " + appKey);
             client.start();
             serverDown = false;
-            // manualSending();
             monitorThings();
         } catch (Exception e) {
             serverDown = true;
@@ -71,7 +70,6 @@ public class BaseEdgeServer {
     /**
      * Pushes all values of all things being monitored up to the server.
      * It will repeat pushing values every POLLING_INTERVAL_SECONDS.
-     * But I no longer use this one, as I am sending updates manually to ThingWorx
      *
      * @throws InterruptedException
      */
@@ -95,13 +93,6 @@ public class BaseEdgeServer {
                         }
                     }
                 }
-                /*
-                 * try {
-                 * tRinterface.RestRequest("JLeeOHThings");
-                 * } catch (IOException e) {
-                 * System.err.println("Error while calling Rest Request" + e.getMessage());
-                 * }
-                 */
             }
         };
         // Creating a refreshing job for updating to ThingWorx
