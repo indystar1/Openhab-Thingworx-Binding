@@ -1,4 +1,4 @@
-# Openhab-Thingworx-Binding
+# Openhab Thingworx Binding
 OpenHAB ThingWorx binding Java code
 
 This has been built upon OpenHAB 2.0 Distro.
