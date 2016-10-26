@@ -1,0 +1,15 @@
+import org.openhab.model.script.actions.Timer
+var Timer timer = null
+rule "do something if YunWatchdog state is not changing for more than 600 seconds"
+    when
+        Item YunWatchdog changed
+    then
+		postUpdate(YunAlive, 1)
+		if(timer != null) {
+			timer.cancel
+			timer = null
+		}
+        timer = createTimer(now.plusSeconds(600)) [|
+            postUpdate(YunAlive, 0)
+        ]
+end
