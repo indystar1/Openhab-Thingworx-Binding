@@ -5,6 +5,7 @@ This has been built upon OpenHAB 2.0 Distro.
 http://docs.openhab.org/developers/development/ide.html
 
 Helpful tips to binding to OpenHAB:
+http://docs.openhab.org/developers/development/bindings.html#setup-and-run-the-binding
 http://docs.openhab.org/developers/development/bindings.html
 
 Helpful tips to adding Services, Properties, and Events, follow here:
