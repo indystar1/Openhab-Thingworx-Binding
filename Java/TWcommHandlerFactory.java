@@ -1,11 +1,16 @@
 /**
+ * Copyright (c) 2016 Indy Star
+ * This program and the accompanying materials are made available under 
+ * the terms of the Eclipse Public License v1.0
+ * This program has been modified by GitHub user id: indystar1
+ *
  * Copyright (c) 2014 openHAB UG (haftungsbeschraenkt) and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  *
- * JLee: http://kacangbawang.com/openhab2-binding-architecture/
+ * FYI, http://kacangbawang.com/openhab2-binding-architecture/
  * OpenHAB will look for a ThingHandlerFactory in our binding bundle.
  * This is what it will use to instantiate ThingHandler’s.
  * Only the ThingHandlerFactory needs to be exposed to OpenHAB.
