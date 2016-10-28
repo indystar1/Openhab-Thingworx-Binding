@@ -54,46 +54,46 @@ import com.thingworx.types.primitives.StringPrimitive;
         @ThingworxPropertyDefinition(name = "EventLimit", description = "Some fault limit", baseType = "INTEGER", category = "Faults", aspects = {
                 "isReadOnly:false" }),
 
-        @ThingworxPropertyDefinition(name = "Front_Motion", description = "Front Motion detected from JLee OpenHAB.", baseType = "BOOLEAN", aspects = {
+        @ThingworxPropertyDefinition(name = "Front_Motion", description = "Front Motion detected from OpenHAB.", baseType = "BOOLEAN", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "Cam1_Online", description = "Camera 1 is online from JLee OpenHAB.", baseType = "BOOLEAN", aspects = {
+        @ThingworxPropertyDefinition(name = "Cam1_Online", description = "Camera 1 is online from OpenHAB.", baseType = "BOOLEAN", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:TURE", "isReadOnly:TRUE",
                 "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "Cam2_Online", description = "Camera 2 is online from JLee OpenHAB.", baseType = "BOOLEAN", aspects = {
+        @ThingworxPropertyDefinition(name = "Cam2_Online", description = "Camera 2 is online from OpenHAB.", baseType = "BOOLEAN", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:TRUE", "isReadOnly:TRUE",
                 "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "WS_BrineDepth", description = "The Water Softener Brine Depth from JLee OpenHAB.", baseType = "INTEGER", aspects = {
+        @ThingworxPropertyDefinition(name = "WS_BrineDepth", description = "The Water Softener Brine Depth from OpenHAB.", baseType = "INTEGER", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "WaterSoftener_State", description = "The Water Softener State from JLee OpenHAB.", baseType = "INTEGER", aspects = {
+        @ThingworxPropertyDefinition(name = "WaterSoftener_State", description = "The Water Softener State from OpenHAB.", baseType = "INTEGER", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "HVAC_OnOff_State", description = "The HVAC On/Off State from JLee OpenHAB.", baseType = "INTEGER", aspects = {
+        @ThingworxPropertyDefinition(name = "HVAC_OnOff_State", description = "The HVAC On/Off State from OpenHAB.", baseType = "INTEGER", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "Sprinkler_State", description = "The sprinkler state from JLee OpenHAB.", baseType = "BOOLEAN", aspects = {
+        @ThingworxPropertyDefinition(name = "Sprinkler_State", description = "The sprinkler state from OpenHAB.", baseType = "BOOLEAN", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "HVAC_State", description = "The HVAC state from JLee OpenHAB.", baseType = "STRING", aspects = {
+        @ThingworxPropertyDefinition(name = "HVAC_State", description = "The HVAC state from OpenHAB.", baseType = "STRING", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "Base_Dehumid", description = "The dehumidifier state from JLee OpenHAB.", baseType = "BOOLEAN", aspects = {
+        @ThingworxPropertyDefinition(name = "Base_Dehumid", description = "The dehumidifier state from OpenHAB.", baseType = "BOOLEAN", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:TRUE", "isReadOnly:TRUE",
                 "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "Prop_YunAlive", description = "The YunAlive state from JLee OpenHAB.", baseType = "BOOLEAN", aspects = {
+        @ThingworxPropertyDefinition(name = "Prop_YunAlive", description = "The YunAlive state from OpenHAB.", baseType = "BOOLEAN", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "Base_Humidity", description = "The basement humidity value from JLee OpenHAB.", baseType = "NUMBER", aspects = {
+        @ThingworxPropertyDefinition(name = "Base_Humidity", description = "The basement humidity value from OpenHAB.", baseType = "NUMBER", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "Base_Temperature", description = "The basement temperature value from JLee OpenHAB.", baseType = "NUMBER", aspects = {
+        @ThingworxPropertyDefinition(name = "Base_Temperature", description = "The basement temperature value from OpenHAB.", baseType = "NUMBER", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "Prop_Humidity", description = "The home humidity value from JLee OpenHAB.", baseType = "NUMBER", aspects = {
+        @ThingworxPropertyDefinition(name = "Prop_Humidity", description = "The home humidity value from OpenHAB.", baseType = "NUMBER", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }),
-        @ThingworxPropertyDefinition(name = "Prop_Temperature", description = "The home temperature value from JLee OpenHAB.", baseType = "NUMBER", aspects = {
+        @ThingworxPropertyDefinition(name = "Prop_Temperature", description = "The home temperature value from OpenHAB.", baseType = "NUMBER", aspects = {
                 "dataChangeType:ALWAYS", "dataChangeThreshold:0", "cacheTime:0", "isPersistent:FALSE",
                 "isReadOnly:TRUE", "pushType:VALUE", "defaultValue:0" }), })
 
