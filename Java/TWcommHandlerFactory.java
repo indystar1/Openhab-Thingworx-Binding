@@ -282,7 +282,6 @@ public class TWcommHandlerFactory extends BaseThingHandlerFactory implements Eve
             // LOG.debug("Sending to ThingWorx update '{}' for item '{}'", itemState, itemName);
             try {
                 BaseEdgeServer.manualSending();
-                // twri.RestRequest("JLeeOHThings");
             } catch (Exception e) {
                 System.err.println("Sending to ThingWorx failed: " + e.getMessage());
             }
