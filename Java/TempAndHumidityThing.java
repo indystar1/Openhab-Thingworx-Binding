@@ -46,7 +46,7 @@ import com.thingworx.types.primitives.StringPrimitive;
 
 // Event Definitions
 @ThingworxEventDefinitions(events = {
-        @ThingworxEventDefinition(name = "SpecialEvent", description = "Special Test Event", dataShape = "JLeeOHDS.Event", category = "Faults", isInvocable = true, isPropertyEvent = false) })
+        @ThingworxEventDefinition(name = "SpecialEvent", description = "Special Test Event", dataShape = "OHDataShape.Event", category = "Faults", isInvocable = true, isPropertyEvent = false) })
 
 @ThingworxPropertyDefinitions(properties = {
         @ThingworxPropertyDefinition(name = "EventStatus", description = "Event status", baseType = "BOOLEAN", category = "Faults", aspects = {
@@ -133,7 +133,7 @@ public class TempAndHumidityThing extends VirtualThing {
         // The event only has one field, the message
         FieldDefinitionCollection faultFields = new FieldDefinitionCollection();
         faultFields.addFieldDefinition(new FieldDefinition(CommonPropertyNames.PROP_MESSAGE, BaseTypes.STRING));
-        defineDataShapeDefinition("JLeeOHDS.Event", faultFields);
+        defineDataShapeDefinition("OHDataShape.Event", faultFields);
 
         // Populate the thing shape with the properties, services, and events that are annotated in this code
         initializeFromAnnotations();
