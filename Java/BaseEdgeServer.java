@@ -1,11 +1,3 @@
-/**
- * Copyright (c) 2016 Indy Star
- * This program and the accompanying materials are made available under 
- * the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- * This program has been modified by GitHub user id: indystar1
- */
 package org.openhab.binding.twcomm;
 
 import java.math.BigDecimal;
