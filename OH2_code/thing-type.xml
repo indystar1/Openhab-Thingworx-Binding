@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="twcomm"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <!-- Sample Thing Type -->
+    <thing-type id="tw_comm">
+        <label>TWcomm Communication</label>
+        <description>Provides communication between OpenHAB and ThingWorx</description>
+
+        <channels>
+            <channel id="switch1" typeId="switch">
+                <label>Switch 1</label>
+                <properties>
+                    <property name="binding:*:OnOffType">SWITCH_BINARY,BASIC</property>
+                </properties>
+            </channel>
+            <channel id="switch2" typeId="switch">
+                <label>Switch 2</label>
+                <properties>
+                    <property name="binding:*:OnOffType">SWITCH_BINARY,BASIC</property>
+                </properties>
+            </channel>
+        </channels>
+
+        <config-description>
+            <parameter name="thing" type="integer" required="false">
+                <label>Itemname</label>
+                <description>Item name</description>
+            </parameter>
+        </config-description>
+
+    </thing-type>
+
+    <!-- Sample Channel Type -->
+    <channel-type id="switch">
+        <item-type>Switch</item-type>
+        <label>Normal Switch</label>
+        <description>Switch state</description>
+    </channel-type>
+</thing:thing-descriptions>
