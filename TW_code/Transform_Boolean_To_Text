@@ -1,0 +1,11 @@
+// Script for transforming Boolean value to Text
+// so that mashup can display text (On or Off) instead of check box
+// First, choose a property to subscribe
+// Leave Source (because here subscribe its own property)
+// Event: DataChange
+// Inputs/Outputs: select /eventData/newValue/value" 
+if(eventData.newValue.value==true) {
+	me.On_Off_text = "On"
+} else if (eventData.newValue.value==false) {
+	me.On_Off_text = "Off"
+}
