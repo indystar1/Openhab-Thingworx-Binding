@@ -1,4 +1,4 @@
-This code is 
+This code is for sending an email when Front motion alert is raised.
 It assumes that you propery created an email notifier and configured email access information.
 
 var params = {
@@ -9,4 +9,4 @@ from:"sender@email.com" /* STRING */,
 };
 
 // no return
-Things["JLeeOHNotifier"].SendMessage(params);
+Things["YourNotifier"].SendMessage(params);
