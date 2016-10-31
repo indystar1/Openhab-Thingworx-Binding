@@ -12,3 +12,5 @@ http://support.ptc.com/cs/help/thingworx_hc/thingworx_edge/index.jspx?id=thingwo
 
 Helpful tips to triggering a service:
 https://community.thingworx.com/thread/39369
+
+"temperature-thing-library.jar" is a ThingWorx library provided by PTC.
