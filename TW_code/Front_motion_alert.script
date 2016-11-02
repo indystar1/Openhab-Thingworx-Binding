@@ -4,7 +4,7 @@ It assumes that you propery created an email notifier and configured email acces
 var params = {
 to: "recipient@email.com" /* STRING */,
 body: "Front Motion detected" /* HTML */,
-subject: eventData.description /* STRING */,
+subject: eventData.description + " at " + eventTime/* STRING */,
 from:"sender@email.com" /* STRING */,
 };
 
