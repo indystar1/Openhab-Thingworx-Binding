@@ -16,5 +16,5 @@ Dimmer IrriCntl "Sprinkler Control [MAP(switch100.map):%s]" <sprinkler> (Sensors
 Number IrriStatus <sprinkler> {mqtt="<[mybroker:JLhome/IRRI/IRRiStatus:state:default]"}
 
 // For future device control
-Switch TWOnOff1 "TW1 On/Off Control" <onoffsw1> (Settings) {channel="twcomm:tw_comm:jleenode:switch1"}
-Switch TWOnOff2 "TW2 On/Off Control" <onoffsw1> (Settings) {channel="twcomm:tw_comm:jleenode:switch2"}
+Switch TWOnOff1 "TW1 On/Off Control" <onoffsw1> (Settings) {channel="twcomm:tw_comm:jleenode:switch1", mqtt=">[mybroker:JLhome/TWOnOff1:command:ON:ON], >[mybroker:JLhome/TWOnOff1:command:OFF:OFF]"}
+Switch TWOnOff2 "TW2 On/Off Control" <onoffsw1> (Settings) {channel="twcomm:tw_comm:jleenode:switch2", mqtt=">[mybroker:JLhome/TWOnOff2:command:ON:ON], >[mybroker:JLhome/TWOnOff2:command:OFF:OFF]"}
