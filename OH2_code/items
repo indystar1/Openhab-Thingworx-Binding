@@ -1,20 +1,20 @@
 // A few example items
 
-Number FrontMotion "Front Motion? [MAP(motion.map):%d]" <man> (Sensors) {mqtt="<[mybroker:JLhome/FrontMotion:state:default]"}
+Number FrontMotion "Front Motion? [MAP(motion.map):%d]" <man> (Sensors) {mqtt="<[mybroker:IThome/FrontMotion:state:default]"}
 
 // To detect if my Arduino Yun is offline
-Number YunWatchdog (Sensors) {mqtt="<[mybroker:JLhome/YunAlive:state:default]"}
+Number YunWatchdog (Sensors) {mqtt="<[mybroker:IThome/YunAlive:state:default]"}
 Number YunAlive "Is My Yun Alive? [MAP(onoffline.map):%d]" <network> (Sensors)
 
 // For Camera 2 control
-Number Cam2Status "Cam2 Status [MAP(onoffline.map):%d]" <ipcam2> (Sensors) {mqtt="<[mybroker:JLhome/Cam2Live:state:default]"}
-Switch Cam2OnOff "Cam2 On/Off Control" <onoffsw1> (Settings) {mqtt=">[mybroker:JLhome/Cam2OnOff:command:ON:Cam2ON], >[mybroker:JLhome/Cam2OnOff:command:OFF:Cam2OFF]"}
+Number Cam2Status "Cam2 Status [MAP(onoffline.map):%d]" <ipcam2> (Sensors) {mqtt="<[mybroker:IThome/Cam2Live:state:default]"}
+Switch Cam2OnOff "Cam2 On/Off Control" <onoffsw1> (Settings) {mqtt=">[mybroker:IThome/Cam2OnOff:command:ON:Cam2ON], >[mybroker:IThome/Cam2OnOff:command:OFF:Cam2OFF]"}
 
 // For Irrigation controller
-Dimmer IrriCntl "Sprinkler Control [MAP(switch100.map):%s]" <sprinkler> (Sensors) {mqtt="<[mybroker:JLhome/IRRI/IRRiStatus:state:default], >[mybroker:JLhome/IRRI:command:ON:IRRiON], >[mybroker:JLhome/IRRI:command:OFF:IRRiOFF]"}
+Dimmer IrriCntl "Sprinkler Control [MAP(switch100.map):%s]" <sprinkler> (Sensors) {mqtt="<[mybroker:IThome/IRRI/IRRiStatus:state:default], >[mybroker:IThome/IRRI:command:ON:IRRiON], >[mybroker:IThome/IRRI:command:OFF:IRRiOFF]"}
 //This is for ThingWorx display
-Number IrriStatus <sprinkler> {mqtt="<[mybroker:JLhome/IRRI/IRRiStatus:state:default]"}
+Number IrriStatus <sprinkler> {mqtt="<[mybroker:IThome/IRRI/IRRiStatus:state:default]"}
 
 // For future device control
-Switch TWOnOff1 "TW1 On/Off Control" <onoffsw1> (Settings) {channel="twcomm:tw_comm:jleenode:switch1", mqtt=">[mybroker:JLhome/TWOnOff1:command:ON:ON], >[mybroker:JLhome/TWOnOff1:command:OFF:OFF]"}
-Switch TWOnOff2 "TW2 On/Off Control" <onoffsw1> (Settings) {channel="twcomm:tw_comm:jleenode:switch2", mqtt=">[mybroker:JLhome/TWOnOff2:command:ON:ON], >[mybroker:JLhome/TWOnOff2:command:OFF:OFF]"}
+Switch TWOnOff1 "TW1 On/Off Control" <onoffsw1> (Settings) {channel="twcomm:tw_comm:indynode:switch1", mqtt=">[mybroker:IThome/TWOnOff1:command:ON:ON], >[mybroker:IThome/TWOnOff1:command:OFF:OFF]"}
+Switch TWOnOff2 "TW2 On/Off Control" <onoffsw1> (Settings) {channel="twcomm:tw_comm:indynode:switch2", mqtt=">[mybroker:IThome/TWOnOff2:command:ON:ON], >[mybroker:IThome/TWOnOff2:command:OFF:OFF]"}
